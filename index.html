@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atrapando la Pelota</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-info">
+            <div class="score">Puntuación: <span id="score">0</span></div>
+            <div class="lives">Vidas: <span id="lives">3</span></div>
+            <div class="level">Nivel: <span id="level">1</span></div>
+            <div class="high-score">Récord: <span id="highScore">0</span></div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="startScreen" class="screen">
+            <h1>Atrapando la Pelota</h1>
+            <p>Mueve el personaje con las teclas de flecha izquierda y derecha o con el ratón</p>
+            <button id="startButton">¡Comenzar!</button>
+        </div>
+        <div id="gameOverScreen" class="screen hidden">
+            <h1>¡Juego Terminado!</h1>
+            <p>Tu puntuación final: <span id="finalScore">0</span></p>
+            <p>Nivel alcanzado: <span id="finalLevel">1</span></p>
+            <p>Récord actual: <span id="highScore">0</span></p>
+            <button id="restartButton">Jugar de nuevo</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
